@@ -89,6 +89,11 @@
           54 Rossa Avenue , Blackrock <br>
           Co. Cork, Republic of Ireland <br>
         </address>
+        <p class="contact">
+          Monday- Friday: 8am-5pm <br>
+          Phone: <a href="tel:+3530120581"><em>+(353)(01) 20581</em></a><br>
+          Email address: <a href="mailto:solaqua2018@gmail.com"><em>solaqua2018@gmail.com </em></a><br>
+        </p>
       </section>
 
       <section class="box co_3">
@@ -100,7 +105,49 @@
       </section>
       <section class="box co_4">
         <h2>FORM</h2>
-        <p>form</p>
+        <div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">FIRST NAME</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">LAST NAME</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">COUNTY</label>
+      </div>
+      <div class="col-75">
+        <select id="county" name="county">
+          <option value="cork">cork</option>
+          <option value="kerry">kerry</option>
+          <option value="clare">clare</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">SUBJECT</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
       </section>
     </main>
 

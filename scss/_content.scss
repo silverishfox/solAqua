@@ -11,9 +11,6 @@ h2{
 img{
   max-width: 100%;
 }
-.co_2 address{
-  padding: 20px;
-}
 .mapWrapper {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -70,7 +67,7 @@ h1 {
     font-size: 12px;
   }
 }
-input{
+#burger{
   opacity: 0.0;
 }
   input + label {
@@ -308,4 +305,23 @@ footer{
 }
 .footer a{
   text-decoration: none;
+}
+.co_2{
+  p{
+  padding: 20px 0 0 30px;
+  margin-bottom: 20px;
+  a:link{
+    color: white;
+  }
+  a:visited{
+    color: white;
+  }
+  }
+  address{
+    padding-left: 30px;
+  }
+}
+picture{
+  padding: 0;
+  margin: 0;
 }
