@@ -358,7 +358,7 @@ body #button.show {
     display: grid;
     grid-gap: 20px 0;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". . co_1 co_1 co_1 co_1 co_2 co_2 co_2 co_2 . ." ". . co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 . ."; }
+    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". . co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 . ." ". . co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 . ."; }
     .co_main section:not(:first-child) {
       width: 100%;
       margin: 0 auto; }
@@ -380,3 +380,15 @@ body #button.show {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 30px;
     grid-template-areas: "se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1" ". se_sp se_sp se_sp se_sp se_sp se_st se_st se_st se_st se_st ."; } }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1500px) and (orientation: landscape) {
+  input ~ nav > ul > li > a {
+    padding: 10px; }
+  input ~ nav {
+    height: 50px; }
+  h1 {
+    top: 15px; }
+  main {
+    margin-top: 25px; }
+  input + label {
+    top: 15px; } }
