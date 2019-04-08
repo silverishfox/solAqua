@@ -129,7 +129,7 @@ input + label {
   input + label span:first-child {
     top: 3px; }
   input + label span:last-child {
-    top: 16px; }
+    top: 13px; }
 
 label:hover {
   cursor: pointer; }
@@ -451,7 +451,6 @@ input[type=submit]:hover {
   margin-bottom: 20px;
   margin-top: 20px; }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
