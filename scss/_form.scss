@@ -9,8 +9,18 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  font-family:Verdana, Geneva, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
 }
-
+.co_2{
+  address{
+    font-family:Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 155%;
+  }
+}
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -33,7 +43,6 @@ input[type=submit]:hover {
 .col-25 {
   float: left;
   width: 25%;
-  // margin-top: 6px;
 }
 
 .col-75 {
@@ -42,21 +51,14 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.co_4{
+.co_4, .co_2{
   h2{
     margin-bottom: 20px;
     margin-top: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
   }
 }

@@ -21,8 +21,8 @@
     grid-template-areas:
       "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn"
       "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 "
-      ". . co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 . ."
-      ". . co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 . .";
+      ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ."
+      ". co_3 co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 co_4 .";
       section:not(:first-child){
         width: 100%;
         margin: 0 auto;
@@ -61,5 +61,11 @@
       "se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn"
       "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1"
       ". se_sp se_sp se_sp se_sp se_sp se_st se_st se_st se_st se_st .";
+  }
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
