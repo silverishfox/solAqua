@@ -56,6 +56,16 @@ h2 {
 img {
   max-width: 100%; }
 
+header h1 a {
+  color: #333;
+  text-decoration: none; }
+
+header h1 a:link {
+  color: #333; }
+
+header h1 a:visited {
+  color: #333; }
+
 .mapWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -114,7 +124,7 @@ input + label {
   top: 40px;
   right: 40px;
   height: 20px;
-  width: 15px;
+  width: 20px;
   z-index: 5; }
   input + label span {
     position: absolute;
@@ -366,14 +376,6 @@ body #button.show {
     .main section:not(:first-child) {
       width: 100%;
       margin: 0 auto; }
-  .co_main {
-    display: grid;
-    grid-gap: 20px 0;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ." ". co_3 co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 co_4 ."; }
-    .co_main section:not(:first-child) {
-      width: 100%;
-      margin: 0 auto; }
   footer {
     display: grid;
     grid-gap: 10px;
@@ -397,6 +399,31 @@ body #button.show {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
+
+@media screen and (min-width: 1030px) {
+  .co_main {
+    display: grid;
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ." ". co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 ." ". co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 ."; }
+    .co_main section:not(:first-child) {
+      width: 100%;
+      margin: 0 auto; } }
+
+@media screen and (min-width: 1500px) {
+  .co_main {
+    display: grid;
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_1 co_1 co_1 co_1 co_1 co_2 co_2 co_2 co_2 co_2 ." ". co_4 co_4 co_4 co_4 co_4 co_3 co_3 co_3 co_3 co_3 ."; }
+    .co_main section:not(:first-child) {
+      width: 100%;
+      margin: 0 auto; } }
+
+@media screen and (min-width: 2000px) {
+  .wrapper {
+    width: 2000px;
+    margin: 0 auto; } }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 1500px) and (orientation: landscape) {
   input ~ nav > ul > li > a {

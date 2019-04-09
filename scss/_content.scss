@@ -11,6 +11,20 @@ h2{
 img{
   max-width: 100%;
 }
+header{
+  h1{
+    a{
+      color: $blackColor;
+      text-decoration: none;
+    }
+    a:link{
+      color: $blackColor;
+    }
+    a:visited{
+      color: $blackColor;
+    }
+  }
+}
 .mapWrapper {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -75,7 +89,7 @@ h1 {
     top: 40px;
     right: 40px;
     height: 20px;
-    width: 15px;
+    width: 20px;
     z-index: 5;
     span {
       position: absolute;

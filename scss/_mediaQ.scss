@@ -14,20 +14,6 @@
       margin: 0 auto;
     }
   }
-  .co_main{
-    display: grid;
-    grid-gap: 20px 0;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-areas:
-      "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn"
-      "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 "
-      ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ."
-      ". co_3 co_3 co_3 co_3 co_3 co_4 co_4 co_4 co_4 co_4 .";
-      section:not(:first-child){
-        width: 100%;
-        margin: 0 auto;
-      }
-  }
   footer {
     display: grid;
     grid-gap: 10px;
@@ -67,5 +53,44 @@
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .co_main{
+    display: grid;
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas:
+      "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn"
+      "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 "
+      ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ."
+      ". co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 ."
+      ". co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 .";
+      section:not(:first-child){
+        width: 100%;
+        margin: 0 auto;
+      }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .co_main{
+    display: grid;
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas:
+      "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn"
+      "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 "
+      ". co_1 co_1 co_1 co_1 co_1 co_2 co_2 co_2 co_2 co_2 ."
+      ". co_4 co_4 co_4 co_4 co_4 co_3 co_3 co_3 co_3 co_3 .";
+      section:not(:first-child){
+        width: 100%;
+        margin: 0 auto;
+      }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .wrapper{
+    width: 2000px;
+    margin: 0 auto;
   }
 }
