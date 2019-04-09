@@ -45,7 +45,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3, a, .flex {
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: #333;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; }
+
+.buttonP {
+  text-align: center;
+  margin-bottom: 10px; }
+
+h1, h2, h3, a, .flex, .button {
   font-family: 'Exo', sans-serif;
   text-transform: uppercase; }
 
@@ -95,7 +110,7 @@ main {
       padding: 40px 20px 20px 20px; }
     main section h2 {
       font-size: 20px; }
-    main section p {
+    main section p, main section .ulSe {
       font-family: Verdana, Geneva, sans-serif;
       font-weight: 100;
       padding: 0 10px 0 10px;
@@ -260,7 +275,7 @@ input:checked ~ nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "co_mn co_mn co_mn" "ih1 ih1 ih1" "co_1 co_1 co_1" "co_2 co_2 co_2" "co_3 co_3 co_3" "co_4 co_4 co_4";
+  grid-template-areas: "co_mn co_mn co_mn" "ih1 ih1 ih1" "co_1 co_1 co_1" "co_2 co_2 co_2" "co_4 co_4 co_4" "co_3 co_3 co_3";
   background-color: #fff;
   color: #444; }
 
@@ -376,6 +391,8 @@ body #button.show {
     .main section:not(:first-child) {
       width: 100%;
       margin: 0 auto; }
+  .buttonP {
+    text-align: right; }
   footer {
     display: grid;
     grid-gap: 10px;
@@ -458,12 +475,6 @@ label {
   line-height: 155%; }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   float: right; }
 
 input[type=submit]:hover {

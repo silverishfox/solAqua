@@ -1,6 +1,20 @@
 $blackColor: #333;
-
-h1, h2, h3,a,.flex{
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: $blackColor;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.buttonP{
+  text-align: center;
+  margin-bottom: 10px;
+}
+h1, h2, h3,a,.flex,.button{
   font-family: 'Exo', sans-serif;
   text-transform: uppercase;
 }
@@ -57,7 +71,7 @@ main{
     h2{
       font-size: 20px;
     }
-    p{
+    p,.ulSe{
       font-family:Verdana, Geneva, sans-serif;
       font-weight: 100;
       padding: 0 10px 0 10px;
@@ -256,8 +270,8 @@ h1 {
     "ih1 ih1 ih1"
     "co_1 co_1 co_1"
     "co_2 co_2 co_2"
-    "co_3 co_3 co_3"
-    "co_4 co_4 co_4";
+    "co_4 co_4 co_4"
+    "co_3 co_3 co_3";
   background-color: #fff;
   color: #444;
 }
