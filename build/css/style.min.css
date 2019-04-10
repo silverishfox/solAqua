@@ -419,7 +419,7 @@ body #button.show {
     grid-template-areas: "se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn se_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1" ". se_sp se_sp se_sp se_sp se_sp se_st se_st se_st se_st se_st ."; } }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75 {
     width: 100%;
     margin-top: 0; } }
 
