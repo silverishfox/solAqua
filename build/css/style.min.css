@@ -281,14 +281,13 @@ input:checked ~ nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "co_mn co_mn co_mn" "ih1 ih1 ih1" "co_1 co_1 co_1" "co_2 co_2 co_2" "co_4 co_4 co_4" "co_3 co_3 co_3";
+  grid-template-areas: "co_mn co_mn co_mn" "ih1 ih1 ih1" "co_4 co_4 co_4" "co_1 co_1 co_1" "co_2 co_2 co_2" "co_3 co_3 co_3";
   background-color: #fff;
   color: #444; }
 
 footer {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px;
   background-color: white;
   color: #333;
   line-height: 135%;
@@ -299,9 +298,13 @@ footer {
   footer .co {
     grid-area: co; }
   footer .cop {
-    grid-area: cop; }
+    grid-area: cop;
+    margin-bottom: 80px; }
   footer .ts {
-    grid-area: ts; }
+    grid-area: ts;
+    background-color: #333;
+    color: white;
+    padding-bottom: 20px; }
   footer h3 {
     margin: 20px 0 20px 0;
     font-weight: lighter; }
@@ -405,7 +408,7 @@ body #button.show {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: ". ad ad ad co co co co cop cop cop ."; } }
+    grid-template-areas: ". ad ad ad co co co co cop cop cop ." "ts ts ts ts ts ts ts ts ts ts ts ts"; } }
 
 @media screen and (min-width: 1200px) {
   .main {
@@ -430,7 +433,7 @@ body #button.show {
     display: grid;
     grid-gap: 20px 0;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ." ". co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 ." ". co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 ."; }
+    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 co_4 ." ". co_2 co_2 co_2 co_2 co_2 co_1 co_1 co_1 co_1 co_1 ." ". co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 co_3 ."; }
     .co_main section:not(:first-child) {
       width: 100%;
       margin: 0 auto; } }
@@ -440,7 +443,7 @@ body #button.show {
     display: grid;
     grid-gap: 20px 0;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_1 co_1 co_1 co_1 co_1 co_2 co_2 co_2 co_2 co_2 ." ". co_4 co_4 co_4 co_4 co_4 co_3 co_3 co_3 co_3 co_3 ."; }
+    grid-template-areas: "co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn co_mn" "ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 ih1 " ". co_1 co_1 co_1 co_1 co_1 co_4 co_4 co_4 co_4 co_4 ." ". co_2 co_2 co_2 co_2 co_2 co_3 co_3 co_3 co_3 co_3 ."; }
     .co_main section:not(:first-child) {
       width: 100%;
       margin: 0 auto; } }

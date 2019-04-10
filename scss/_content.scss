@@ -274,9 +274,9 @@ h1 {
   grid-template-areas:
     "co_mn co_mn co_mn"
     "ih1 ih1 ih1"
+    "co_4 co_4 co_4"
     "co_1 co_1 co_1"
     "co_2 co_2 co_2"
-    "co_4 co_4 co_4"
     "co_3 co_3 co_3";
   background-color: #fff;
   color: #444;
@@ -284,7 +284,6 @@ h1 {
 footer{
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px;
   background-color: white;
   color: $blackColor;
   line-height: 135%;
@@ -298,9 +297,13 @@ footer{
   }
   .cop{
     grid-area: cop;
+    margin-bottom: 80px;
   }
   .ts{
     grid-area: ts;
+    background-color: $blackColor;
+    color: white;
+    padding-bottom: 20px;
   }
   h3{
     margin: 20px 0 20px 0;
