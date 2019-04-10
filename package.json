@@ -13,6 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "browserify": "^16.2.3",
+    "imagemin": "^6.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10"
   },

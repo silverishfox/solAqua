@@ -300,6 +300,8 @@ footer {
     grid-area: co; }
   footer .cop {
     grid-area: cop; }
+  footer .ts {
+    grid-area: ts; }
   footer h3 {
     margin: 20px 0 20px 0;
     font-weight: lighter; }
